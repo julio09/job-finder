@@ -1,8 +1,8 @@
-import {Header,Hero,InfoSection,Section,Category,Feature,Testimonial,Footer} from './components'
+import { Category, Feature, Footer, Header, Hero, InfoSection, Section, Testimonial, Sponsor, News } from './components';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-sans">
       <header className="App-header">
         <Header />
       </header>
@@ -13,6 +13,8 @@ function App() {
         <Category />
         <Feature />
         <Testimonial />
+        <Sponsor />
+        <News />
       </main>
       <Footer/>
     </div>

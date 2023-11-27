@@ -30,6 +30,7 @@ module.exports = {
         borderCard: '1px solid #000'
       },
       borderRadius: {
+        radius: "5px",
         borderRadius: '2px',
         borderCard: '10px'
       }
