@@ -1,5 +1,5 @@
 import React from 'react'
-import { Avatar, HeroImg, Hotel, Check } from '../Asset'
+import { Avatar, Check, HeroImg, Hotel } from '../Asset'
 
 function Hero() {
   return (
@@ -16,7 +16,7 @@ function Hero() {
               <input type='text' placeholder='Job Title or Keyword' className='flex p-2 items-center justify-center placeholder:text-black focus:outline-none' />
               <input type='' placeholder='City or State' className='p-2 placeholder:text-black focus:outline-none' />
             </div>
-            <button className='rounded-borderRadius bg-green px-8 py-4 font-bold text-white justify-center items-center'>Search</button>
+            <button className='rounded-borderRadius bg-green px-8 py-4 font-bold text-white flex justify-center items-center'>Search</button>
           </div>
         </div>
         <div className='flex flex-col gap-2 items-start'>
@@ -25,21 +25,21 @@ function Hero() {
           </div>
           <div className='flex flex-col gap-2 items-start text-[14px]'>
               <div className='flex items-start gap-2'>
-                <button className='p-2 items-center bg-backgroundThird'>Graphic Designer</button>
-                <button className='p-2 items-center bg-backgroundThird'>Front End Developer</button>
-                <button className='p-2 items-center bg-backgroundThird'>Data Analyst</button>
-                <button className='p-2 items-center bg-backgroundThird'>Accountant</button>
+                <button className='p-2 flex items-center bg-backgroundThird'>Graphic Designer</button>
+                <button className='p-2 flex items-center bg-backgroundThird'>Front End Developer</button>
+                <button className='p-2 flex items-center bg-backgroundThird'>Data Analyst</button>
+                <button className='p-2 flex items-center bg-backgroundThird'>Accountant</button>
               </div>
               <div className='flex items-start gap-2'>
-                <button className='p-2 items-center bg-backgroundThird'>Photographer</button>
-                <button className='p-2 items-center bg-backgroundThird'>Full Stack Developer</button>
-                <button className='p-2 items-center bg-backgroundThird'>Senior Lecturer</button>
-                <button className='p-2 items-center bg-backgroundThird'>UX Designer</button>
+                <button className='p-2 flex items-center bg-backgroundThird'>Photographer</button>
+                <button className='p-2 flex items-center bg-backgroundThird'>Full Stack Developer</button>
+                <button className='p-2 flex items-center bg-backgroundThird'>Senior Lecturer</button>
+                <button className='p-2 flex items-center bg-backgroundThird'>UX Designer</button>
               </div>
             </div>
         </div>
       </div>
-      <div className='Sary relative'>
+      <div className='Sary relative z-20'>
         <div className='absolute p-4 right-[-3px] top-[5px] bg-backgroundThird rounded-borderCard flex flex-col justify-center items-center gap-2 '>
           <img alt='' src={Avatar}/>
           <p className='text-[14px]'>Hello, I am looking to apply <br /> for the role of a UX Designer</p>
@@ -48,12 +48,12 @@ function Hero() {
           <span className='font-bold '>200+</span>
           <p>Got job on our platform</p>
           <div className='flex px-2 items-center'>
-          <img alt='' src={Avatar} className='z-50'/>
-          <img alt='' src={Avatar} className='z-40'/>
-          <img alt='' src={Avatar} className='z-30'/>
-          <img alt='' src={Avatar} className='z-20'/>
-          <img alt='' src={Avatar} className='z-10'/>
-          <img alt='' src={Avatar} className='z-0'/>
+          <img alt='' src={Avatar} className=''/>
+          <img alt='' src={Avatar} className=''/>
+          <img alt='' src={Avatar} className=''/>
+          <img alt='' src={Avatar} className=''/>
+          <img alt='' src={Avatar} className=''/>
+          <img alt='' src={Avatar} className=''/>
           </div>
         </div>
         <div className='absolute top-7 left-7 flex flex-col gap-4 items-start justify-center bg-backgroundThird rounded-borderCard p-4 '>
@@ -62,7 +62,7 @@ function Hero() {
               <img alt='' src={Hotel}/>
               <span className='text-[14px]'>Kokomlemle</span>
             </div>
-            <button className='px-2 py-1 justify-center rounded-radius bg-white font-bold text-green'>Full Time</button>
+            <button className='px-2 py-1 flex justify-center rounded-radius bg-white font-bold text-green'>Full Time</button>
           </div>
           <div className='flex flex-col items-start gap-2'>
             <span className='font-bold text-[14px] '>Graphic Designer</span>
@@ -80,7 +80,7 @@ function Hero() {
         </div>
         <img alt='' src={Check} />
         </div>
-        <img alt='' className='object-cover' src={HeroImg}/>
+        <img alt='' className='object-cover z-10' src={HeroImg}/>
       </div>
     </div>
     </>

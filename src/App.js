@@ -2,7 +2,7 @@ import { Category, Feature, Footer, Header, Hero, InfoSection, Section, Testimon
 
 function App() {
   return (
-    <div className="App font-sans">
+    <div className="App font-sans relative">
       <header className="App-header">
         <Header />
       </header>
